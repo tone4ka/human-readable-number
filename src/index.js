@@ -7,7 +7,7 @@ module.exports = function toReadable (number) {
   let result='';
   if(number===0)return 'zero';
   if (length===3){
-      result=result+units[numberArray[0]] +' hundred ';
+      result=result+units[numberArray[0]-1] +' hundred ';
       if(numberArray[1]===0 && numberArray[2]===0){
         return result.trim();
       } 
